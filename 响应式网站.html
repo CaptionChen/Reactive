@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <!--[if lt IE 9]>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.js"></script>
+    <![endif]-->
+    <style>
+        .nn {
+            float: right;
+        }
+
+        @media (max-width: 768px) {
+            .nn {
+                float: none;
+            }
+
+        }
+
+        #bb .container a {
+            color: #FFE358;
+        }
+
+        p i {
+            font-size: 60px;
+            font-weight: 100;
+            font-family: "Microsoft YaHei";
+        }
+
+        #p {
+            margin: 100px 0 0 0;
+        }
+
+        #pp {
+            font-size: 80px;
+        }
+
+        #bbt {
+            width: 150px;
+            height: 50px;
+            background-color: #fff;
+            border: 1px solid #cfcfcf;
+        }
+        #bbn{
+            width: 150px;
+            height: 50px;
+            background-color: #fff;
+            border: 1px solid #cfcfcf;
+        }
+
+        .vv {
+            background-color: #fff;
+            height: auto;
+            text-align: center;
+        }
+
+        #dd {
+            position: absolute;
+            top: 500px;
+            left: 50%;
+            transform: translate(-50%);
+            width: 700px;
+            height: 500px;
+        }
+
+        .im {
+            width: 200px;
+            height: 200px;
+        }
+        .wenben {
+            width: 50%;
+            border-right: 1px solid  #ccc;
+            height: 1100px;
+            position: relative;
+        }
+        .imm{
+            width: 100px;
+            height: 100px;
+        }
+        .l1{
+            text-align: right; width: 300px;height: 100px; position:absolute;top:0;right:60px;
+        }
+        .i1{
+            position:absolute;top:0;right:-50px;
+        }
+        .i2{
+            position:absolute;top:200px;right:-50px;
+        }
+        .l2{
+            text-align: left; width: 300px;height: 100px;
+            position:absolute;top: 200px;right:-360px;
+        }
+        .l3{
+            text-align: right; width: 300px;height: 100px;
+            position:absolute;top:450px;right:60px;
+        }
+        .i3{
+            position:absolute;top: 450px;right:-50px;
+        }
+        .i4{
+            position:absolute;top:700px;right:-50px;
+        }
+        .l4{
+            text-align: left; width: 300px;height: 100px;
+            position:absolute;top: 700px;right:-360px;
+        }
+        .i5{
+            position:absolute;top:950px;right:-50px;
+            /*border-radius: 64px;border:2px solid #ccc;*/
+        }
+
+        @media (max-width: 900px) {
+
+            #uu .wenben{
+                border:none;
+                width: 100%;
+                /*height:auto;*/
+            }
+            .j1{
+                text-align: left;
+                position:absolute;
+                top:0;
+                left:15%;
+            }
+            .j2{
+                text-align: left;
+                position:absolute;
+                top:0;
+                left:40%;
+            }
+            .j12{
+                text-align: left;
+                position:absolute;
+                top:22%;
+                left:15%;
+            }
+            .j22{
+                text-align: left;
+                position:absolute;
+                top:22%;
+                left:40%
+            }
+            .j13{
+                text-align: left;
+                position:absolute;
+                top:45%;
+                left:15%;
+            }
+            .j23{
+                text-align: left;
+                position:absolute;
+                top:45%;
+                left:40%;
+            }
+            .j14{
+                text-align: left;
+                position:absolute;
+                top:68%;
+                left:15%;
+            }
+            .j24{
+                text-align: left;
+                position:absolute;
+                top:68%;
+                left:40%;
+            }
+            .j15{
+                text-align: left;
+                position:absolute;
+                top:90%;
+                left:43%;
+            }
+        }
+        span{
+            font-size: 30px;
+            margin:0 10px;
+        }
+        .hj{
+            margin:30px 0;
+            /*width: 700px;*/
+            /*height: 800px;*/
+        }
+        .thumbnail:hover .n1{
+            display:none;
+        }
+        .yy{
+            display:none;
+            line-height: 300px;
+            color:#fff;
+            font-size: 40px;
+        }
+        .thumbnail:hover .yy{
+            display:block;
+        }
+        .tt{
+            background-color: yellow;width: 400px;height: 300px;
+            margin-right:auto;margin-left:auto;
+        }
+    </style>
+</head>
+<body>
+
+<nav id="bb" class="navbar navbar-default navbar-fixed-top" role="navigation"
+     style="background-color: #FFFEEF;border:none;">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">檀木克鲁斯之言</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse nn" id="example-navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><span id="o1">第一部分</span></li>
+                <li><a id="o2" href="#">第二部分</a></li>
+                <li><a id="o3" href="#">第三部分</a></li>
+                <li><a id="o4" href="#">第四部分</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        第五部分 <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">jmeter</a></li>
+                        <li><a href="#">EJB</a></li>
+                        <li><a href="#">Jasper Report</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">分离的链接</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">另一个分离的链接</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="col-lg-12 col-sm-12"
+     style="background-color: #FFFEEF;
+     position:relative;
+text-align: center;height:auto;min-height:100px;">
+    <div class="jumbotron" style="background-color: #FFFEEF;
+      padding:0 0 100px 0;background: url(images/background1.jpg);background-size:100% 100%;">
+        <p id="p"><i>Welconme To My World!</i></p>
+
+        <p id="pp">IT's NICE TO MEET YOU</p>
+        <button id="bbt">MORE</button>
+    </div>
+    <!--<img class="img-responsive" src="images/background1.jpg" alt=""/>-->
+</div>
+
+
+<div class="col-lg-12 col-sm-12 col-md-12 vv">
+    <div class="row" style="margin:0 auto;">
+        <p style="margin: 100px 0 0 0;"><i>大家好，偶系家家惠！</i></p>
+
+        <p>喜欢就来贪玩蓝月喜欢就来贪玩蓝月喜欢就来贪玩蓝月喜欢就来贪玩蓝月喜欢就来贪玩蓝月</p>
+
+        <div class="col-lg-4 col-sm-4 col-md-12">
+            <img class="img-circle im" src="images/about/about1.jpg"
+                 alt="通用的占位符缩略图">
+
+            <div class="caption">
+                <h3>info</h3>
+
+                <p>jzlkjgha;lhg:LKD:LVHS:IVNlkgrns[othdv;lkn/KDSNg;oih</p>
+
+                <p>
+                    dksfhsglk;zjlkjv;lzshg;lkadlkhv;sofihag;kwajg;k
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-md-12">
+            <!--<div class="thumbnail">-->
+            <img class="img-circle im" src="images/about/about1.jpg"
+                 alt="通用的占位符缩略图">
+            <!--</div>-->
+            <div class="caption">
+                <h3>info</h3>
+
+                <p>jzlkjgha;lhg:LKD:LVHS:IVNlkgrns[othdv;lkn/KDSNg;oih</p>
+
+                <p>
+                    ksfhsglk;zjlkjv;lzshg;lkadlkhv;sofihag;kwajg;k
+                </p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-md-12">
+            <!--<div class="thumbnail">-->
+            <img class="img-circle im" src="images/about/about1.jpg"
+                 alt="通用的占位符缩略图">
+            <!--</div>-->
+            <div class="caption">
+                <h3>info</h3>
+
+                <p>jzlkjgha;lhg:LKD:LVHS:IVNlkgrns[othdv;lkn/KDSNg;oih</p>
+
+                <p>
+                    ksfhsglk;zjlkjv;lzshg;lkadlkhv;sofihag;kwajg;k
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-lg-12 col-sm-12 col-md-12 vv">
+    <div class="row">
+        <p style="margin: 100px 0 0 0;"><i>大家好，偶系家家惠！</i></p>
+
+        <p>喜欢就来贪玩蓝月喜欢就来贪玩蓝月喜欢就来贪玩蓝月喜欢就来贪玩蓝月喜欢就来贪玩蓝月</p>
+
+        <div class="col-lg-4 col-sm-6 col-md-12">
+            <div class="thumbnail tt">
+                <span class="glyphicon glyphicon-header yy"></span>
+                <img class="n1" src="images/project/prj1.jpg"
+                     alt="通用的占位符缩略图">
+                <!--<div class="gg"></div>-->
+            </div>
+            <div class="caption">
+                <h3>他是傻蛋</h3>
+
+                <p>他是傻蛋。大家快来看议案。</p>
+
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-md-12">
+            <div class="thumbnail tt">
+                <span class="glyphicon glyphicon-header yy"></span>
+                <img class="n1" src="images/project/prj2.jpg"
+                     alt="通用的占位符缩略图">
+            </div>
+            <div class="caption">
+                <h3>我是傻蛋</h3>
+
+                <p>发展工作的方向法国政府工作室大V工作日</p>
+
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-md-12">
+            <div class="thumbnail tt">
+                <span class="glyphicon glyphicon-header yy"></span>
+                <img class="n1" src="images/project/prj3.jpg"
+                     alt="通用的占位符缩略图">
+            </div>
+            <div class="caption">
+                <h3>傻蛋在看我们</h3>
+
+                <p>阿设法而发。让方正发展。</p>
+
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-md-12">
+            <div class="thumbnail tt">
+                <span class="glyphicon glyphicon-header yy"></span>
+                <img class="n1" src="images/project/prj4.jpg"
+                     alt="通用的占位符缩略图">
+                <!--<img class="ff" src="images/article/pic1.jpg" alt=""/>-->
+            </div>
+            <div class="caption">
+                <h3>看！傻蛋炸了</h3>
+
+                <p>董事长的说法FSAC。而非深V发。</p>
+
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-md-12">
+            <div class="thumbnail tt">
+                <span class="glyphicon glyphicon-header yy"></span>
+                <img class="n1" src="images/project/prj5.jpg"
+                     alt="通用的占位符缩略图">
+            </div>
+            <div class="caption">
+                <h3>还有如此厚颜无耻之傻蛋</h3>
+
+                <p>发展GV本周三哥哥。一些示例文本。</p>
+
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-md-12" style="text-align: center;">
+            <div class="thumbnail tt" >
+                <span class="glyphicon glyphicon-header yy"></span>
+                <img class="n1" src="images/project/prj6.jpg"
+                     alt="通用的占位符缩略图">
+
+            </div>
+            <div class="caption">
+                <h3>傻蛋羞愧而去</h3>
+                <p>组队副本辅导班。那种地方不占地方。</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="uu" class="col-lg-12 col-sm-12 col-md-12" style="text-align: center;">
+    <p><i>ARTICLE</i></p>
+
+    <p>LDshlkfvazsl;dfvhoi;Srhnwaklgnlskdvh hiShgkeruvilbrewkjbgrugviwbfharwu</p>
+
+    <div class="wenben ">
+
+        <div class="l1 j2">
+            <p>Time4</p>
+            <p>Time4</p>
+            <p>jkdvljzsnb;ofrn'pakzrnegipheraiglknsfvkl
+                nfzlvnjpizdpivngrpsfngpfnvpkskvmskmgprjp</p>
+        </div>
+        <div class="i1 j1">
+            <img class="img-circle imm" src="images/article/pic1.jpg" alt=""/>
+        </div>
+        <div class="i2 j12" style="position:absolute;top:200px;right:-50px;">
+            <div id="as">
+                <img class="img-circle imm" src="images/article/pic2.jpg" alt=""/>
+            </div>
+
+        </div>
+        <div class="l2 j22">
+            <p>Time1</p>
+            <p>Time1</p>
+            <p>jkdvljzsnb;ofrn'pakzrnegipheraiglknsfvkl
+                nfzlvnjpizdpivngrpsfngpfnvpkskvmskmgprjp</p>
+        </div>
+        <div class="l3 j23">
+            <p>Time2</p>
+            <p>Time2</p>
+            <p>jkdvljzsnb;ofrn'pakzrnegipheraiglknsfvkl
+                nfzlvnjpizdpivngrpsfngpfnvpkskvmskmgprjp</p>
+        </div>
+        <div class="i3 j13">
+            <img class="img-circle imm" src="images/article/pic3.jpg" alt=""/>
+        </div>
+        <div class="i4 j14">
+            <img class="img-circle imm" src="images/article/pic4.jpg" alt=""/>
+        </div>
+        <div class="l4 j24">
+            <p>Time3</p>
+            <p>Time3</p>
+            <p>jkdvljzsnb;ofrn'pakzrnegipheraiglknsfvkl
+                nfzlvnjpizdpivngrpsfngpfnvpkskvmskmgprjp</p>
+        </div>
+        <div class="i5 j15">
+            <img name="12" class="img-circle imm" src="images/about/about3.jpg" alt=""/>
+        </div>
+    </div>
+
+    <div class="col-lg-12 col-sm-12 col-md-12">
+        <h2>ABOUT</h2>
+        <p>Lksbdfjaelfhoeihdvlkawrhtha;dknflsdhglukh</p>
+        <div class="col-lg-4 col-sm-6 col-md-4">
+                <img class="img-circle im" src="images/about/about1.jpg"
+                     alt="通用的占位符缩略图">
+            <div class="caption">
+                <h3>他是傻蛋</h3>
+                <p>他是傻蛋。大家快来看议案。</p>
+                <span class="glyphicon glyphicon-knight"></span>
+                <span class="glyphicon glyphicon-circle-arrow-down"></span>
+                <span class="glyphicon glyphicon-upload"></span>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-md-4">
+            <img class="img-circle im" src="images/about/about2.jpg"
+                 alt="通用的占位符缩略图">
+            <div class="caption">
+                <h3>他是傻蛋</h3>
+                <p>他是傻蛋。大家快来看议案。</p>
+                <span class="glyphicon glyphicon-knight"></span>
+                <span class="glyphicon glyphicon-circle-arrow-down"></span>
+                <span class="glyphicon glyphicon-upload"></span>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 col-md-4">
+        <img class="img-circle im" src="images/about/about3.jpg"
+             alt="通用的占位符缩略图">
+        <div class="caption">
+            <h3>他是傻蛋</h3>
+            <p>他是傻蛋。大家快来看议案。</p>
+            <span class="glyphicon glyphicon-knight"></span>
+            <span class="glyphicon glyphicon-circle-arrow-down"></span>
+            <span class="glyphicon glyphicon-upload"></span>
+        </div>
+    </div>
+    </div>
+
+</div>
+
+<div class="col-lg-12 col-sm-12 col-md-12" style="text-align: center;">
+    <div class="col-lg-3 col-sm-3 col-md-3">
+        <img class="img-circle imm" src="images/logo/logo1.jpg"
+             alt="通用的占位符缩略图">
+    </div>
+    <div class="col-lg-3 col-sm-3 col-md-3">
+        <img class="img-circle imm" src="images/logo/logo2.jpg"
+             alt="通用的占位符缩略图">
+    </div>
+    <div class="col-lg-3 col-sm-3 col-md-3">
+        <img class="img-circle imm" src="images/logo/logo3.jpg"
+             alt="通用的占位符缩略图">
+    </div>
+    <div class="col-lg-3 col-sm-3 col-md-3">
+        <img class="img-circle imm" src="images/logo/logo4.jpg"
+             alt="通用的占位符缩略图">
+    </div>
+</div>
+
+<div class="col-lg-12 col-sm-12 container"
+     style="background-color:ghostwhite;height: 800px;text-align: center;
+     background: url(images/background2.jpg);position: relative;
+     background-size:100% 100%;">
+    <h2>CONTACT</h2>
+    <h5>zvbsdjkvbjsjzvbsdjkvbjsjvdsjvosdvjsdnvnlsdknvzvbsdjkvbjsjvdsjvosdvjsdnvnlsdknvvdsjvosdvjsdnvnlsdknv</h5>
+    <div style="margin:100px 0 0 0;">
+    <div class="col-lg-6 col-sm-12 col-md-12 ">
+    <div class="form-group  col-sm-12 col-md-12">
+        <div class="col-sm-12 hj ">
+            <input type="text" class="form-control" id="inputSuccess" placeholder="Your Name">
+        </div>
+    </div>
+    <div class="form-group  col-sm-12 col-md-12">
+
+        <div class="col-sm-12">
+            <input type="text" class="form-control hj" id="inputWarning" placeholder="Your Emils">
+        </div>
+    </div>
+    <div class="form-group  col-sm-12 col-md-12">
+
+        <div class="col-sm-12 ">
+            <input type="text" class="form-control hj" id="inputError" placeholder="Your Phone">
+        </div>
+    </div>
+
+</div>
+        <div class="col-lg-6 col-sm-12 col-md-12 " >
+            <div class="col-sm-12  " style="margin:30px 0 0 0;">
+                <textarea name="" placeholder="Your Message"  class="form-control " id="" cols="30" rows="12"></textarea>
+        </div>
+        </div>
+    </div>
+
+    <div class=" col-lg-12 col-sm-12 col-md-12 " >
+        <button id="bbn">Send Menssage</button>
+    </div>
+
+</div>
+<!--</div>-->
+
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script>
+//    $(document).ready(function(){
+//        $(".i2").click(function(){
+//            $("<div></div>").css({backgroundColor:"yellow",width:"200px",height:"200px"})
+//        })
+//    })
+
+
+
+
+
+
+</script>
+</body>
+</html>
